@@ -1,0 +1,87 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int month;
+
+    cout << "Podaj numer miesiaca (1-12): ";
+    cin >> month;
+
+    if (month < 1 || month > 12) {
+        cout << "Blad: Liczba spoza przedzialu (1-12)." << endl;
+        return 1;  
+    }
+
+    string monthName;
+    int days;
+    string weather;
+
+    switch (month) {
+    case 1:
+        monthName = "Styczen";
+        days = 31;
+        weather = "Pochmurno";
+        break;
+    case 2:
+        monthName = "Luty";
+        days = 28;
+        weather = "Pochmurno";
+        break;
+    case 3:
+        monthName = "Marzec";
+        days = 31;
+        weather = "Pochmurno";
+        break;
+    case 4:
+        monthName = "Kwiecien";
+        days = 30;
+        weather = "Slonecznie";
+        break;
+    case 5:
+        monthName = "Maj";
+        days = 31;
+        weather = "Slonecznie";
+        break;
+    case 6:
+        monthName = "Czerwiec";
+        days = 30;
+        weather = "Slonecznie";
+        break;
+    case 7:
+        monthName = "Lipiec";
+        days = 31;
+        weather = "Slonecznie";
+        break;
+    case 8:
+        monthName = "Sierpien";
+        days = 31;
+        weather = "Slonecznie";
+        break;
+    case 9:
+        monthName = "Wrzesien";
+        days = 30;
+        weather = "Slonecznie";
+        break;
+    case 10:
+        monthName = "Pazdziernik";
+        days = 31;
+        weather = "Pochmurno";
+        break;
+    case 11:
+        monthName = "Listopad";
+        days = 30;
+        weather = "Pochmurno";
+        break;
+    case 12:
+        monthName = "Grudzien";
+        days = 31;
+        weather = "Pochmurno";
+        break;
+    }
+
+    cout << "Miesiac: " << monthName << endl;
+    cout << "Liczba dni: " << days << endl;
+    cout << "Pogoda: " << weather << endl;
+
+    return 0;
+}
