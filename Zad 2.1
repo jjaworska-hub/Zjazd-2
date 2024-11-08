@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Podaj wartosc n: ";
+    cin >> n;
+
+    int suma = 0;
+
+    for (int i = 1; i <= n; i++) {
+        int sumaCzesciowa = 0; 
+
+        for (int j = 1; j <= i; j++) {
+            sumaCzesciowa += j;  
+            cout << j;  
+            if (j < i) {  
+                cout << " + ";
+            }
+        }
+
+        cout << " = " << sumaCzesciowa << endl;  
+        suma += sumaCzesciowa;  
+    }
+
+    cout << "Calkowita suma szeregu: " << suma << endl;  
+    return 0;
+}
